@@ -1,0 +1,14 @@
+$brown1: #964B00;
+
+%center {
+    display: flex;
+    text-align: center;
+    padding: 20px;
+}
+
+@mixin flex2 ($justify, $align) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+

@@ -1,0 +1,35 @@
+
+@import "values";
+@mixin flex { 
+    &:hover {
+    @extend %center;
+    }
+}
+
+
+.main {
+
+    background-color: tan;
+        h1 {
+            @include flex;
+            color: #ddd;
+        }
+        h2 {
+            background-color: $brown1;
+        }
+        h3 {
+            color: $brown1;
+        }
+}
+
+.minor {
+    @extend %center;
+    background-color: silver;
+    h1 {
+        text-decoration: underline;
+        margin-bottom: 25px*4;
+    }
+    h2 {
+        text-decoration: line-through;
+    }
+}
